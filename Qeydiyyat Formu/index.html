@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat</title>
+</head>
+<body>
+        <!--Başlıq Hissəsi-->
+    <h1>Qeydiyyat Formu</h1>
+        <!--Qeydiyyat Formu-->
+    <form action="/submit" method="post">
+        <label for="name">Ad:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Şifrə:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Mən şərtləri qəbul edirəm</label><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Kişi</label><br>  
+        <input type="radio" id="female" name="gender" value="female">   
+        <label for="female">Qadın</label><br><br>
+        <label for="country">Ölkə:</label><br>
+        <select id="country" name="country">
+            <option value="azerbaijan">Azərbaycan</option>
+            <option value="turkey">Türkiyə</option>
+            <option value="usa">ABŞ</option>    
+        </select><br><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Əlavə şərhlər..."></textarea><br>
+        <input type="reset" value="Təmizlə">
+        <input type="submit" value="Qeydiyyat">
+    </form>
+        <!--Alt Hissə-->    
+    <footer>
+        <p>&copy; 2025 Qeydiyyat Formu</p>
+
+</body>
+</html>
